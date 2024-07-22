@@ -13,7 +13,7 @@ def get_contacts():
     json_contacts = [contact.to_json() for contact in contacts] # List of contacts in JSON format.
     return jsonify({"contacts": json_contacts}) # Returns the list of contacts in JSON format.  
 
-@app.route('/create_contact', methods=['POST'])
+@app.route('/create_contact', methods=['POST']) # This route will be used to create a new contact.
 def create_contact():
     """
     This function handles the POST request to create a new contact.
